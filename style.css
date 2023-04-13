@@ -261,7 +261,6 @@ button {
         display:flex;
         flex-direction: column;
         align-items: center;
-        max-width: 90vw;
     }
     .leftsec>ul {
         padding-left: 0;
