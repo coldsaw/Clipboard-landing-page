@@ -265,6 +265,7 @@ button {
     }
     .leftsec>ul {
         padding-left: 0;
+        max-width: 90vw;
     }
     
     .leftsec h3 {
@@ -281,9 +282,9 @@ button {
         max-width: 90vw;
         margin: auto;
     }
-    ul{
+    /* ul{
         padding-inline-start: 40px;
-    }
+    } */
     .btns{
         display: flex;
         flex-direction: column;
@@ -302,12 +303,16 @@ button {
     }
     nav>ul {
         column-count: 1;
-        margin-left: -23%;
+        margin-left:  0;
     }
     svg{
         margin: 20px;
     }
     .menu img{
         margin: 0 auto 30px;
+    }
+    
+    .centrsec>p, p, h3, h4{
+        max-width: 90vw;
     }
 }
