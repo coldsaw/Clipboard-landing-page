@@ -2,7 +2,6 @@
 
 .attribution {
     font-size: 11px;
-    ;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -10,6 +9,10 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+svg{
+    margin: 8px;
 }
 
 svg:hover .icon {
@@ -36,7 +39,7 @@ body {
 header {
     background-image: url(images/bg-header-desktop.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,4 +250,64 @@ button {
 .mbtn:active {
     border: none;
     box-shadow: 1px 1px 10px rgba(91, 102, 192, 0.2);
+}
+
+@media screen and (max-width:1199px){
+    body{
+        max-width: 100vw;
+        text-align: center;
+    }
+    .dblsec{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw;
+    }
+    .leftsec>ul {
+        padding-left: 0;
+    }
+    
+    .leftsec h3 {
+    
+        text-align: center;
+    }
+    
+    .leftsec p {
+        text-align: center;
+    }
+    
+    #pcimg, #devimage {
+        height: auto;
+        max-width: 90vw;
+        margin: auto;
+    }
+    ul{
+        padding-inline-start: 40px;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ibtn, .mbtn{
+        margin-top: 20px;
+    }
+    .menu {
+        background-color: rgb(245, 246, 248);
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 120px;
+    }
+    nav>ul {
+        column-count: 1;
+        margin-left: -23%;
+    }
+    svg{
+        margin: 20px;
+    }
+    .menu img{
+        margin: 0 auto 30px;
+    }
 }
